@@ -1,4 +1,4 @@
-.preloader{
+.preloader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,8 +8,10 @@
     top: 0;
     right: 0;
     left: 0;
-    background-color: #D2B48C;
+    background: rgb(244, 216, 165);
+    background: radial-gradient(circle, rgba(200, 174, 125, 1) 0%, rgba(118, 88, 39, 1) 82%, rgba(101, 69, 31, 1) 100%);
 }
-.preloader-vanish{
+
+.preloader-vanish {
     display: none;
 }
