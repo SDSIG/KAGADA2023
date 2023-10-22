@@ -5,14 +5,19 @@
     text-decoration: none;
     list-style: none;
     font-family: "ubuntu";
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body
-{
-    background-color: tan
+
+body {
+    background-color: tan;
 }
+
 img {
     width: 100%;
 }
+
 header {
     margin-left: 0.2em;
     height: 15vh;
@@ -25,19 +30,24 @@ header {
     background-size: 100% 100px;
     background-repeat: no-repeat;
 }
+
 header .header-left {
     display: flex;
     align-items: center;
 }
+
 header .header-left .logo {
     width: 140px;
 }
+
 header .header-left nav {
     margin-left: 50px;
 }
+
 header .header-left nav ul {
     display: flex;
 }
+
 nav ul li a {
     display: block;
     color: rgb(102, 51, 30);
@@ -48,21 +58,26 @@ nav ul li a {
     float: right;
     align-content: end;
 }
+
 nav ul li a:hover,
 nav ul li a.active {
     color: bisque;
 }
+
 nav .login-signup {
     display: none;
 }
+
 header .header-right {
     display: flex;
     align-items: center;
 }
+
 header .login-signup {
     color: #cfd9e0;
     font-weight: bold;
 }
+
 header .login-signup a {
     display: inline-block;
     color: #0b2239;
@@ -70,24 +85,29 @@ header .login-signup a {
     padding: 5px 12px;
     border-radius: 5px;
 }
+
 header .header-right .hamburger {
     margin-left: 20px;
     cursor: pointer;
     display: none;
 }
+
 header .header-right .hamburger div {
     width: 30px;
     height: 2px;
     margin: 6px 0;
     background: #fff;
 }
+
 @media only screen and (max-width: 1000px) {
     header {
         padding: 0 20px;
     }
+
     header .header-right .hamburger {
         display: block;
     }
+
     header .header-left nav {
         margin: 0;
         position: absolute;
@@ -95,7 +115,7 @@ header .header-right .hamburger div {
         left: 0;
         width: 100%;
         height: fit-content;
-        
+
         /* background-color: #0b2239; */
         background-image: url('assets/111-01.png');
         background-size: 100% 30vh;
@@ -105,21 +125,25 @@ header .header-right .hamburger div {
         text-align: center;
         z-index: -1;
     }
+
     header .header-left nav.active {
         top: 80px;
         padding-top: 8vh;
         padding-bottom: 8vh;
     }
+
     header .header-left nav ul {
         display: block;
     }
 }
+
 @media only screen and (max-width: 500px) {
     nav .login-signup {
         display: block;
         margin-top: 20px;
     }
-    header .header-right .login-signup  {
+
+    header .header-right .login-signup {
         display: none;
         background-image: none;
         background-image: url('assets/111-01.png');
