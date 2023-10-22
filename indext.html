@@ -8,7 +8,8 @@
     <title>KAGADA 2023</title>
     <link rel="stylesheet" href="stylet.css">
     <link rel="stylesheet" href="stylet2.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./gallery.css">
+    <link rel="stylesheet" href="./faq.css">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -91,17 +92,17 @@
 
         <!-- gallery -->
 
-        <section class="active" id="gallery">
+        <section  class="active" id="gallery">
             <br><br><br><br>
-            <h1>IMAGE GALLERY</h1>
-                <div class="gallery-container">
-                    <ul>
-                        <li><img src="./assets/kagada2.webp"></li>
-                        <li><img src="./assets/kagada1.webp"></li>
-                        <li><img src="./assets/kagada3.webp"></li>
-                        <li><img src="./assets/kagada4.webp"></li>
-                    </ul>
-                </div>
+            <h1 data-aos="fade-up">IMAGE GALLERY</h1>
+            <div data-aos="fade-up" class="gallery-container">
+                <ul>
+                    <li><img src="./assets/kagada2.webp"></li>
+                    <li><img src="./assets/kagada1.webp"></li>
+                    <li><img src="./assets/kagada3.webp"></li>
+                    <li><img src="./assets/kagada4.webp"></li>
+                </ul>
+            </div>
         </section>
 
 
@@ -149,106 +150,68 @@
         </section>
         <br><br><br>
         <hr>
-        <section class="active" id="faq">
+        <section data-aos="fade-up"  class="active" id="faq">
             <br><br><br><br>
             <h1>FREQUENTLY ASKED QUESTIONS</h1>
-            <br>
-            <br>
-            <div class="accordian">
-                <section class="q1" id="ans1">
-                    <div class="question">
-                        <h3 class="ques">What is Codefury?</h3>
-                        <a href="#ans1" id="ans1">
-                            <h3>+</h3>
-                        </a>
-                    </div>
-                    <div class="answer" id="answer">
-                        <p>
-                            It is an Annual National-Level hackathon conducted by IEEE UVCE Computer Society.
-                        </p>
-                    </div>
-                </section>
-                <br>
-                <section class="q1" id="ans1">
-                    <div class="question">
-                        <h3 class="ques">When is Codefury 6.0?</h3>
-                        <a href="#ans1" id="ans1">
-                            <h3>+</h3>
-                        </a>
-                    </div>
-                    <div class="answer" id="answer">
-                        <p>
-                            CodeFury 6.0 will be conducted on XXth and XXth of August 2023.
-                        </p>
-                    </div>
-                </section>
-                <br>
-                <section class="q1" id="ans1">
-                    <div class="question">
-                        <h3 class="ques">What is the team size?</h3>
-                        <a href="#ans1" id="ans1">
-                            <h3>+</h3>
-                        </a>
-                    </div>
-                    <div class="answer" id="answer">
-                        <p>
-                            A team can have a minimum of 1 and a maximum of 4 participants.
-                        </p>
-                    </div>
-                </section>
-                <br>
-                <section class="q1" id="ans1">
-                    <div class="question">
-                        <h3 class="ques">Are the participants required to use a particular tech stack?</h3>
-                        <a href="#ans1" id="ans1">
-                            <h3>+</h3>
-                        </a>
-                    </div>
-                    <div class="answer" id="answer">
-                        <p>
-                            No, participants may use any tech stack of their choice to develop a web or a mobile
-                            application.
-                        </p>
-                    </div>
-                </section>
-                <br>
-                <section class="q1" id="ans1">
-                    <div class="question">
-                        <h3 class="ques">What are the prizes?</h3>
-                        <a href="#ans1" id="ans1">
-                            <h3>+</h3>
-                        </a>
-                    </div>
-                    <div class="answer" id="answer">
-                        <p>
-                            The grand prize is ₹10,000 for the winning team and ₹5,000 for the runners-up for App
-                            development and web development track. The grand prize for UI/UX track is ₹1,000 for winning
-                            team and ₹500 for the runners-up.
-                        </p>
-                    </div>
-                </section>
-                <br>
-                <section class="q1" id="ans1">
-                    <div class="question">
-                        <h3 class="ques">What kind of problem statement can be expected?</h3>
-                        <a href="#ans1" id="ans1">
-                            <h3>+</h3>
-                        </a>
-                    </div>
-                    <div class="answer" id="answer">
-                        <p>
-                            It can be anything. Here are the problem statements from last year- <br><br>
-                            1) An application for women safety. <br>
-                            2) An application to assist the agriculture sector. <br>
-                            3) An application to provide jobs for unorganized sector post covid. <br>
-                            4) An application which provides a virtual learning environment where like minded
-                            individuals can present their resources,activities and interact within a course structure.
-                        </p>
-                    </div>
-                </section>
-                <br>
-                <br>
+            <div class="wrapper">
+                <div class="accordion">
+                    <input type="radio" id="radioYour Account" name="accordion" checked>
+                    <label class="item" for="radioYour Account">
+                        <div class="title">WHAT IS CODEFURY AND WHEN IS IT?</div>
+                        <div class="content">
+                            Codefury is a 24 hours Annual National-Level hackathon conducted by IEEE UVCE Computer
+                            Society. It
+                            will be conducted on 23rd September, 2023.
+                        </div>
+                    </label>
+                    <input type="radio" id="radioPayment & Pricing" name="accordion">
+                    <label class="item" for="radioPayment & Pricing">
+                        <div class="title">WHY SHOULD I PARTICIPATE IN CODEFURY 6.0? </div>
+                        <div class="content">
+                            You stand a chance to get cash prizes if you win; if not, you will always get an excellent
+                            opportunity to network with like-minded people and learn many things.
+                        </div>
+                    </label>
+                    <input type="radio" id="radioReturns & Refunds" name="accordion">
+                    <label class="item" for="radioReturns & Refunds">
+                        <div class="title">HOW DO I REGISTER FOR CODEFURY 6.0?</div>
+                        <div class="content">
+                            It can be anything. Here are the problem statements from last year-
+                            <p>
+                                1) An application for women safety
+                            </p>
+                            <p>
+                                2) An application to assist the agriculture sector
+                            </p>
+                            <p>
+                                3) An application to provide jobs for unorganized sector post covid.
+                            </p>
+                            <p>
+                                4) An application which provides a virtual learning environment where like minded
+                                individuals
+                                can present their resources,activities and interact within a course structure.
+                            </p>
+                        </div>
+                    </label>
+                    <input type="radio" id="radioShipping & Pickup" name="accordion">
+                    <label class="item" for="radioShipping & Pickup">
+                        <div class="title">ARE THE PARTICIPANTS REQUIRED TO USE A PARTICULAR TECH STACK?
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aliquid harum velit sed
+                            similique
+                            exercitationem, quasi in, nulla quos accusamus nemo vel dolores. Est id sint dolore,
+                            deserunt
+                            dolorum accusantium.
+                        </div>
+                    </label>
+
+                </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
         </section>
         </section>
     </div>
