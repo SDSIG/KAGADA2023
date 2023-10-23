@@ -136,6 +136,7 @@ section {
   overflow: hidden;
   min-height: 100vh;
   overflow-y: hidden;
+
 }
 
 @media (max-width: 767px) and (orientation: landscape) {
@@ -147,6 +148,17 @@ section {
 .jumbotron .container {
   position: relative;
   z-index: 1;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  60%,100% {
+      opacity: 1;
+   }
 }
 
 .jumbotron:before {

@@ -31,6 +31,11 @@
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 </head>
 
@@ -76,11 +81,11 @@
 
 
     <script>
-        document.addEventListener('scroll',(ele)=>{
-            if(window.scrollY>=65){
+        document.addEventListener('scroll', (ele) => {
+            if (window.scrollY >= 65) {
                 document.getElementById('header-navbar').classList.add('nav-beautiful');
             }
-            else{
+            else {
                 document.getElementById('header-navbar').classList.remove('nav-beautiful');
             }
         })
@@ -157,7 +162,7 @@
                 <!-- Section Title -->
                 <div class="title-wrap mb-5" data-aos="fade-up">
                     <h2 class="section-title">
-                    FEATURES <!-- <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a> -->
+                        FEATURES <!-- <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a> -->
                     </h2>
                     <p class="section-sub-title">check out each track and participate in the one for you
                     </p>
@@ -175,7 +180,7 @@
                                     </div>
                                     <h4>POSTER PRESENTATION</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                                </div>  
+                                </div>
                             </div>
                             <br>
                             <!-- End of Feature Item -->
@@ -186,7 +191,7 @@
                                     </div>
                                     <h4>PAPPER PRESENTATION</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                                </div>  
+                                </div>
                             </div>
                             <br>
                             <div class="col-md-4 col-sm-12 text-center mt-4">
@@ -196,7 +201,7 @@
                                     </div>
                                     <h4>PROJECT PRESENTATION</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                                </div>  
+                                </div>
                             </div>
                             <br>
                             <div class="col-md-4 col-sm-12 text-center mt-4">
@@ -206,7 +211,7 @@
                                     </div>
                                     <h4>OTTIGE KALIYONA</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                                </div>  
+                                </div>
                             </div>
                             <br>
                             <div class="col-md-4 col-sm-12 text-center mt-4">
@@ -216,7 +221,7 @@
                                     </div>
                                     <h4>FOOD FOR CAUSE</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                                </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -757,7 +762,6 @@
         <script src="vendor/isotope/isotope.min.js"></script>
         <script src="vendor/lightcase/lightcase.js"></script>
         <script src="vendor/waypoints/waypoint.min.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
         <!-- Main JS -->
         <script src="js/app.min.js "></script>
