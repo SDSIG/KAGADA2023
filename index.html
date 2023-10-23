@@ -43,6 +43,26 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
+
+    <!-- popup html -->
+    <!-- <div class='popup-onload'>
+        <div class='cnt223'>
+            <p>
+                Registrations end in
+                <br />
+            <p>TIME AND DATE</p>
+            <br />
+            <a href='' class='close'>Close</a>
+            </p>
+        </div>
+    </div> -->
+    <!-- popup html end-->
+    <!-- popup script -->
+
+    <!-- popup script end -->
+
+
+    <!-- Navbar html start -->
     <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center text-white" href="/">
@@ -94,8 +114,9 @@
             </div>
         </div>
     </nav>
+    <!-- navbar html end -->
 
-
+    <!-- navbar script -->
     <script>
         document.addEventListener('scroll', (ele) => {
             if (window.scrollY >= 65) {
@@ -1132,7 +1153,9 @@
                                             <br>
                                             3) An application to provide jobs for unorganized sector post covid.
                                             <br>
-                                            4) An application which provides a virtual learning environment where like minded individuals can present their resources,activities and interact within a course structure.
+                                            4) An application which provides a virtual learning environment where like
+                                            minded individuals can present their resources,activities and interact
+                                            within a course structure.
                                         </p>
                                     </li>
                                 </ul>
@@ -1197,6 +1220,25 @@
         <!-- Main JS -->
         <script src="js/app.min.js "></script>
         <script src="//localhost:35729/livereload.js"></script>
+
+        <script>
+            $(function () {
+                var overlay = $('<div id="overlay"></div>');
+                overlay.show();
+                overlay.appendTo(document.body);
+                $('.popup-onload').show();
+                $('.close').click(function () {
+                    $('.popup-onload').hide();
+                    overlay.appendTo(document.body).remove();
+                    return false;
+                });
+                $('.x').click(function () {
+                    $('.popup').hide();
+                    overlay.appendTo(document.body).remove();
+                    return false;
+                });
+            });
+        </script>
 </body>
 
 </html>
