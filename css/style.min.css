@@ -765,3 +765,45 @@ section {
 }
 
 /*=====  End of RESPONSIVE  ======*/
+
+
+/* button style */
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #fff;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #fff;
+  width: 40%;
+ }
+ 
+ button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #fff; 
+  transition: .7s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ button:hover::before {
+  width: 80%;
+ }
+ 
+ button:hover {
+  color: #111;
+ }
+ 
