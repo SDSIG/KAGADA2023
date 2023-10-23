@@ -2,6 +2,8 @@
  * Roxy: Bootstrap template by GettTemplates.com
  * https://gettemplates.co/roxy
  */
+@import url('https://fonts.cdnfonts.com/css/samarkan');
+
 html, body {
   scroll-behavior: smooth;
   width: 100%;
@@ -757,5 +759,10 @@ section {
   .progress {
     height: 30px;
     font-size: 16px; } }
+
+.samarkan 
+{
+  font-family: 'Samarkan', sans-serif;
+}
 
 /*=====  End of RESPONSIVE  ======*/
