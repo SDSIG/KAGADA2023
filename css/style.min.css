@@ -17,19 +17,18 @@ body {
 /* scroll bar */
 
 ::-webkit-scrollbar-track {
-  border: 5px solid white;
+  border: 2px solid white;
   background-color: #fff;
 }
 
 ::-webkit-scrollbar {
-  width: 17px;
-  background-color: #fff;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #357cc4;
   border-radius: 10px;
-  border: solid #fff 5px;
+  border: solid #fff 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -37,13 +36,7 @@ body {
 }
 
 ::-webkit-scrollbar-button {
-  color: #357cc4;
-  background-color: #F730D2;
-  border: solid #fff 5px;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-button:hover {
-  border: solid #fff 2px;
+  display: none;
 }
 
 /* scroll bar end */
