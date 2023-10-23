@@ -74,6 +74,18 @@
         </div>
     </nav>
 
+
+    <script>
+        document.addEventListener('scroll',(ele)=>{
+            if(window.scrollY>=65){
+                document.getElementById('header-navbar').classList.add('nav-beautiful');
+            }
+            else{
+                document.getElementById('header-navbar').classList.remove('nav-beautiful');
+            }
+        })
+    </script>
+
     <div id="side-nav" class="sidenav">
         <a href="javascript:void(0)" id="side-nav-close">&times;</a>
 
