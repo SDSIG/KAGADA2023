@@ -224,6 +224,13 @@ section {
   font-size: 3rem !important;
 }
 
+.flex
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .overlay {
   color: #fff;
 }

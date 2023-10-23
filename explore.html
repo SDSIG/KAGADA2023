@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            overflow: hidden;
+            background-color: blue;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center center;
+        }
+        #album
+        {
+            margin: 5% auto;
+            width: 70%;
+            height: 50%;
+        }
+        #album .turn-page
+        {
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="album">
+        <div class="image" style="background-image: url(img/1.PNG)"></div>
+        <div class="image" style="background-image: url(img/2.PNG)"></div>
+        <div class="image" style="background-image: url(img/3.PNG)"></div>
+        <div class="image" style="background-image: url(img/4.PNG)"></div>
+        <div class="image" style="background-image: url(img/5.PNG)"></div>
+        <div class="image" style="background-image: url(img/6.PNG)"></div>
+        <div class="image" style="background-image: url(img/1.PNG)"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    <script src="turn.min.js"></script>
+    <script>
+        $('#album').turn({gradients: true, acceleration: true});
+    </script>
+</body>
+</html>
