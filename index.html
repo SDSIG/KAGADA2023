@@ -2,13 +2,9 @@
 <html lang="en">
 
 <head>
-    <!--
-     - Roxy: Bootstrap template by GettTemplates.com
-     - https://gettemplates.co/roxy
-    -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kagada 2023</title>
+    <title>KAGADA 2023</title>
     <meta name="description" content="Roxy">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -34,6 +30,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="./css/popup.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/explore.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
@@ -60,26 +57,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 
+    <!-- popup html -->
+    <!-- <div class="toast">
+        <div class="toast-content">
+            <i class="fas fa-solid fa-check check"></i>
+
+            <div class="message">
+                <span class="text text-1">Success</span>
+                <span class="text text-2">Your changes has been saved</span>
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+
+        <div class="progress"></div>
+    </div> -->
+
+
     <!-- Back to top button -->
     <a id="button"></a>
-
-    <!-- popup html -->
-    <!-- <div class='popup-onload'>
-        <div class='cnt223'>
-            <p>
-                Registrations end in
-                <br />
-            <p>TIME AND DATE</p>
-            <br />
-            <a href='' class='close'>Close</a>
-            </p>
-        </div>
-    </div> -->
-    <!-- popup html end-->
-    <!-- popup script -->
-
-    <!-- popup script end
-
 
     <!-- Navbar html start -->
     <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
@@ -1305,6 +1300,37 @@
         <!-- Main JS -->
         <script src="js/app.min.js "></script>
         <script src="//localhost:35729/livereload.js"></script>
+
+        <!-- script for popup -->
+        <script>
+            const button = document.querySelector("popup"),
+                toast = document.querySelector(".toast");
+            (closeIcon = document.querySelector(".close")),
+                (progress = document.querySelector(".progress"));
+
+            let timer1, timer2;
+            toast.classList.add("active");
+            progress.classList.add("active");
+
+            timer1 = setTimeout(() => {
+                toast.classList.remove("active");
+            }, 5000); //1s = 1000 milliseconds
+
+            timer2 = setTimeout(() => {
+                progress.classList.remove("active");
+            }, 5300);
+
+            closeIcon.addEventListener("click", () => {
+                toast.classList.remove("active");
+
+                setTimeout(() => {
+                    progress.classList.remove("active");
+                }, 300);
+
+                clearTimeout(timer1);
+                clearTimeout(timer2);
+            });
+        </script>
 
         <script>
             $(function () {
