@@ -63,14 +63,38 @@
             <i class="fas fa-solid fa-check check"></i>
 
             <div class="message">
-                <span class="text text-1">Success</span>
-                <span class="text text-2">Your changes has been saved</span>
+                <span class="text text-1">Registration ends in</span>
+                <span id="countdown" style="font-weight: 900;" class="text text-2">Time and Date countdown</span>
+
             </div>
         </div>
         <i class="fa-solid fa-xmark close"></i>
 
         <div class="progress"></div>
     </div> -->
+    <!-- countdown script -->
+    <!-- <script>
+        var countDownDate = new Date("Nov 15, 2023 00:00:00").getTime();
+
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "d : " + hours + "h : "
+                + minutes + "m : " + seconds + "s ";
+            // console.log(days + "d " + hours + "h "
+            //     + minutes + "m " + seconds + "s ");
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "ENDED";
+            }
+        }, 1000);
+    </script> -->
 
 
     <!-- Back to top button -->
