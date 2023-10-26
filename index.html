@@ -60,9 +60,9 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 
     <!-- popup html -->
-    <!-- <div class="toast">
+    <div class="toast">
         <div class="toast-content">
-            <i class="fas fa-solid fa-check check"></i>
+            <i class="fa-solid fa-circle-info" style="font-size: 30px; color: #4070f4;"></i>
 
             <div class="message">
                 <span class="text text-1">Registration ends in</span>
@@ -73,9 +73,9 @@
         <i class="fa-solid fa-xmark close"></i>
 
         <div class="progress"></div>
-    </div> -->
+    </div>
     <!-- countdown script -->
-    <!-- <script>
+    <script>
         var countDownDate = new Date("Nov 15, 2023 00:00:00").getTime();
 
         var x = setInterval(function () {
@@ -96,7 +96,7 @@
                 document.getElementById("countdown").innerHTML = "ENDED";
             }
         }, 1000);
-    </script> -->
+    </script>
 
 
     <!-- Back to top button -->
@@ -1348,19 +1348,22 @@
 
             timer1 = setTimeout(() => {
                 toast.classList.remove("active");
+                toast.classList.add("toast-none")
             }, 5000); //1s = 1000 milliseconds
 
             timer2 = setTimeout(() => {
                 progress.classList.remove("active");
+                toast.classList.add("toast-none")
             }, 5300);
-
+            
             closeIcon.addEventListener("click", () => {
                 toast.classList.remove("active");
 
                 setTimeout(() => {
                     progress.classList.remove("active");
                 }, 300);
-
+                
+                toast.classList.add("toast-none")
                 clearTimeout(timer1);
                 clearTimeout(timer2);
             });

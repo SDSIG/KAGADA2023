@@ -661,7 +661,7 @@ section {
 }
 
 .triangle-2 {
-  top: 30%;
+  top: 15%;
   left: 20%;
   animation: fadeInFromTop .5s linear forwards, floating ease-in-out 8s infinite;
 }
