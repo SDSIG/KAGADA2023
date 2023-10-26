@@ -22,7 +22,14 @@ p
 {
   font-size:12px;
 }
-
+.exp
+{ 
+  display: block;
+}
+.other
+{
+  display: block;
+}
 .center
 {
   height:55vh;
@@ -127,4 +134,44 @@ p
 {
   background-color:blue;
   cursor:pointer;
+}
+@media (max-width: 768px) {
+  #exp
+  {
+    height: 110vh;
+  }
+  #other
+  {
+    height: 55vh;
+  }
+  .property-card {
+    max-width: 100%;
+  }
+
+  .property-image {
+    height: 12em;
+  }
+
+  .property-description {
+    padding: 0.5em 0.8em;
+  }
+}
+
+@media (max-width: 540px) {
+  #exp
+  {
+    height: 125vh;
+  }
+  #other
+  {
+    height: 84vh;
+  }
+  .property-image {
+    height: 8em;
+    padding: 1em;
+  }
+
+  .property-description {
+    padding: 0.5em;
+  }
 }
