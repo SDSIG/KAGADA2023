@@ -2,15 +2,20 @@
 <html lang="en">
 
 <head>
-    <!--
-     - Roxy: Bootstrap template by GettTemplates.com
-     - https://gettemplates.co/roxy
-    -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kagada 2023</title>
+    <title>KAGADA 2023</title>
     <meta name="description" content="Roxy">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
@@ -25,11 +30,15 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="./css/popup.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/explore.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/faq.css">
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
@@ -48,26 +57,48 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 
+    <!-- popup html -->
+    <!-- <div class="toast">
+        <div class="toast-content">
+            <i class="fas fa-solid fa-check check"></i>
+
+            <div class="message">
+                <span class="text text-1">Registration ends in</span>
+                <span id="countdown" style="font-weight: 900;" class="text text-2">Time and Date countdown</span>
+
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+
+        <div class="progress"></div>
+    </div> -->
+    <!-- countdown script -->
+    <!-- <script>
+        var countDownDate = new Date("Nov 15, 2023 00:00:00").getTime();
+
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "d : " + hours + "h : "
+                + minutes + "m : " + seconds + "s ";
+            // console.log(days + "d " + hours + "h "
+            //     + minutes + "m " + seconds + "s ");
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "ENDED";
+            }
+        }, 1000);
+    </script> -->
+
+
     <!-- Back to top button -->
     <a id="button"></a>
-
-    <!-- popup html -->
-    <!-- <div class='popup-onload'>
-        <div class='cnt223'>
-            <p>
-                Registrations end in
-                <br />
-            <p>TIME AND DATE</p>
-            <br />
-            <a href='' class='close'>Close</a>
-            </p>
-        </div>
-    </div> -->
-    <!-- popup html end-->
-    <!-- popup script -->
-
-    <!-- popup script end
-
 
     <!-- Navbar html start -->
     <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
@@ -338,8 +369,9 @@
                 <div class="section-content">
                     <div class="row">
                         <div class="col-md-12">
+                            <br>
+                            <br>
                             <div class="row align-items-center text-white">
-
                                 <div class="col-md-4 offset-md-2 col-sm-6" data-aos="fade-right">
                                     <h2 class="mb-4">UVCE</h2>
                                     <p>Established in the year 1917 by Bharat Ratna Sir M Visvesvaraya, University
@@ -498,6 +530,7 @@
         <section class="explore" id="explore">
             <section id="features" class="bg-white">
 
+                <br><br><br>
                 <br><br><br>
                 <div class="title-wrap mb-5" data-aos="fade-up">
                     <h2 class="section-title">
@@ -682,15 +715,18 @@
                 <!-- </div> -->
                 <!-- </div> -->
                 <!-- </div> -->
+                <br>
+                <br>
             </section>
         </section>
         <!-- End of Features Section-->
 
-
         <!-- Gallery Section -->
         <section class="gallery" id="gallery">
-            <section id="portfolio" class="bg-white">
+            <section id="portfolio">
                 <div class="container">
+                    <br>
+                    <br>
                     <div class="section-content">
                         <!-- Section Title -->
                         <div class="title-wrap">
@@ -798,7 +834,7 @@
                                                     </a> -->
                                                 </div>
                                                 <div class="grid-title">
-                                                    <h4>Project Presen</h4>
+                                                    <h4>Project Presentation</h4>
                                                 </div>
                                             </div>
 
@@ -932,8 +968,9 @@
         <!-- FAQ Section-->
 
         <section class="sponsors" id="faqs">
-            <section id="client" class="overlay bg-fixed" style="background-image: url(img/bg.jpg);">
+            <section id="client" class="overlay bg-fixed" style="background-image: url(./img/uvce_vector.png);">
                 <div class="container">
+                    <br><br>
                     <div class="section-content" data-aos="fade-up">
                         <div class="row ">
                             <div class="col-md-12">
@@ -980,6 +1017,24 @@
                                             within a course structure.
                                         </p>
                                     </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <h2>WHAT KIND OF PROBLEM STATEMENT CAN BE EXPECTED?
+                                        </h2>
+                                        <p>It can be anything. Here are the problem statements from last year-
+                                            <br>
+                                            1) An application for women safety
+                                            <br>
+                                            2) An application to assist the agriculture sector
+                                            <br>
+                                            3) An application to provide jobs for unorganized sector post covid.
+                                            <br>
+                                            4) An application which provides a virtual learning environment where like
+                                            minded individuals can present their resources,activities and interact
+                                            within a course structure.
+                                        </p>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -997,6 +1052,7 @@
         <section id="testimonial" class="section-padding bg-fixed bg-white overlay"
             style="background-image: url(img/bg-white.jpg);">
             <div class="container">
+                <br><br>
                 <div class="section-content" data-aos="fade-up">
                     <div class="heading-section text-center">
                         <h2>Winners Experience
@@ -1060,6 +1116,7 @@
         <section class="sponsors" id="sponsors">
             <section id="client" class="overlay bg-fixed" style="background-image: url(img/bg.jpg);">
                 <div class="container">
+                    <br><br>
                     <div class="section-content" data-aos="fade-up">
                         <div class="row ">
                             <div class="col-md-12">
@@ -1107,68 +1164,88 @@
         <!-- Contacts Section -->
         <section class="contact" id="contact">
             <section id="reservation" class="bg-white section-content">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0" data-aos="fade-right">
-                            <div class="bg-white p-5 shadow">
-                                <div class="heading-section text-center">
-                                    <h2><strong>Contact Details</strong></h2>
-    
+                <br><br>
+                <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+                    <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                        <div class="bg-white p-3 shadow">
+                            <div class="heading-section text-center">
+                                <h2><strong>Contact Details</strong></h2>
                                 <div>
-                                <a href="tel:+91 74835 79659">
-                                <div class="phone" style="color: #5f687b;">
-                                    <i class="bi bi-phone"></i>
-                                    <h4> <strong>Abhijith Kini</strong></h4>
-                                    <div style="padding-left: 15%;">
-                                    <p class="align-center" style="font-size: 18px;">+91 74835 79659</p>
-                                    </div>
-                                </div>
-                                </a>
+                                    <a href="tel:+91 74835 79659">
+                                        <div class="phone">
+                                            <div style="display: flex; justify-content: center; align-items: center;">
+                                                <i class="fa-solid fa-phone"
+                                                    style="color: #E007B7; font-size: 30px; padding-right: 20px;"></i>
+                                                <div>
+                                                    <br>
+                                                    <h4> <strong>Abhijith Kini</strong></h4>
+                                                    <p class="align-center" style="font-size: 18px;">+91 74835 79659</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div>
                                     <a href="tel:+91 63627 76319">
-                                    <div class="phone" style="color: #5f687b;">
-                                        <i class="bi bi-phone"></i>
-                                        <h4><strong> Nagateja G S</strong></h4>
-                                        <div style="padding-left: 15%;">
-                                        <p class="align-center" style="font-size: 18px;">+91 63627 76319</p>
+                                        <div class="phone">
+                                            <div style="display: flex; justify-content: center; align-items: center;">
+                                                <i class="fa-solid fa-phone"
+                                                    style="color: #E007B7; font-size: 30px; padding-right: 20px;"></i>
+                                                <div>
+                                                    <br>
+                                                    <h4> <strong>Nagateja G S</strong></h4>
+                                                    <p class="align-center" style="font-size: 18px;">+91 63627 76319</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
                                     </a>
                                 </div>
                                 <div>
                                     <a href="tel:+91 72594 25734">
-                                    <div class="phone" style="color: #5f687b;">
-                                        <i class="bi bi-phone"></i>
-                                        <h4><strong> Sandhya K S</strong></h4>
-                                        <div style="padding-left: 15%;">
-                                        <p class="align-center" style="font-size: 18px;">+91 72594 25734</p>
+                                        <div class="phone">
+                                            <div style="display: flex; justify-content: center; align-items: center;">
+                                                <i class="fa-solid fa-phone"
+                                                    style="color: #E007B7; font-size: 30px; padding-right: 20px;"></i>
+                                                <div>
+                                                    <br>
+                                                    <h4> <strong>Sandhya K S</strong></h4>
+                                                    <p class="align-center" style="font-size: 18px;">+91 72594 25734</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
                                     </a>
-                                    </div>
-                                    <div>
-                                    <a href="tel:+91 91136 93228">
-                                        <div class="phone" style="color: #5f687b;">
-                                        <i class="bi bi-phone"></i>
-                                        <h4><strong>Manjesh Patil</strong></h4>
-                                        <div style="padding-left: 15%;">
-                                        <p class="align-center" style="font-size: 18px;">+91 91136 93228</p>
-                                        </div>
-                                        </div>
-                                        </a>
-                                    </div>
                                 </div>
-              
-                            </div>
-                        </div>
-                        <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
-                            <h2 class="mb-4">
-                                MAP
-                            </h2>
-                            <p class="mb-4">map link karle bkl</p>
+                                <div>
+                                    <a href="tel:+91 91136 93228">
+                                        <div class="phone">
+                                            <div style="display: flex; justify-content: center; align-items: center;">
+                                                <i class="fa-solid fa-phone"
+                                                    style="color: #E007B7; font-size: 30px; padding-right: 20px;"></i>
+                                                <div>
+                                                    <br>
+                                                    <h4> <strong>Manjesh Patil</strong></h4>
+                                                    <p class="align-center" style="font-size: 18px;">+91 91136 93228</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
 
-                            <!-- <ul class="list-inline py-2">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-left">
+                        <div class="bg-white p-3 shadow"
+                            style="display: flex; justify-content: center; align-items: center;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.210561550178!2d77.5853434658173!3d12.975464621645923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1672fcfc6af1%3A0x9c2dc517c9231979!2sUVCE!5e0!3m2!1sen!2sin!4v1698144829696!5m2!1sen!2sin"
+                                width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <!-- <ul class="list-inline py-2">
                                 <li class="list-inline-item text-center">
                                     <span class="lnr fs-40 lnr-rocket"></span>
                                     <p>Fast delivery</p>
@@ -1183,14 +1260,13 @@
                                 </li>
                             </ul> -->
 
-                            <!-- <a href="#" class="btn btn-link p-0">
+                        <!-- <a href="#" class="btn btn-link p-0">
                                 <span>PURCHASE NOW</span>
                                 <span class="lnr lnr-arrow-right"></span>
                             </a> -->
-                        </div>
                     </div>
-
                 </div>
+
             </section>
         </section>
         <!-- End of Contacts Section -->
@@ -1249,6 +1325,37 @@
         <script src="js/app.min.js "></script>
         <script src="//localhost:35729/livereload.js"></script>
 
+        <!-- script for popup -->
+        <script>
+            const button = document.querySelector("popup"),
+                toast = document.querySelector(".toast");
+            (closeIcon = document.querySelector(".close")),
+                (progress = document.querySelector(".progress"));
+
+            let timer1, timer2;
+            toast.classList.add("active");
+            progress.classList.add("active");
+
+            timer1 = setTimeout(() => {
+                toast.classList.remove("active");
+            }, 5000); //1s = 1000 milliseconds
+
+            timer2 = setTimeout(() => {
+                progress.classList.remove("active");
+            }, 5300);
+
+            closeIcon.addEventListener("click", () => {
+                toast.classList.remove("active");
+
+                setTimeout(() => {
+                    progress.classList.remove("active");
+                }, 300);
+
+                clearTimeout(timer1);
+                clearTimeout(timer2);
+            });
+        </script>
+
         <script>
             $(function () {
                 var overlay = $('<div id="overlay"></div>');
@@ -1272,7 +1379,7 @@
             var btn = $('#button');
 
             $(window).scroll(function () {
-                if ($(window).scrollTop() > 300) {
+                if ($(window).scrollTop() > 60) {
                     btn.addClass('show');
                 } else {
                     btn.removeClass('show');
