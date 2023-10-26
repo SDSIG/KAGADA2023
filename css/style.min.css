@@ -1130,8 +1130,22 @@ section {
     padding-top: 15px !important;
     padding-bottom: 15px !important;
   }
+  
+  /* .navbar-transparent .navbar-collapse { */
+    /* background: #ff00cc; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #333399, #ff00cc); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #333399, #ff00cc); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* padding: 10px; */
+  /* } */
+}
 
-  .navbar-transparent .navbar-collapse {
+@media (max-width: 767px) {
+  #header-navbar {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
     background: #ff00cc;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #333399, #ff00cc);
@@ -1140,17 +1154,14 @@ section {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px;
   }
-}
-
-@media (max-width: 767px) {
   .jumbotron h1 {
     font-size: 6rem;
   }
-
+  
   .grid-item {
     width: 100%;
   }
-
+  
   .progress {
     height: 30px;
     font-size: 16px;
