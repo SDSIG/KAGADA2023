@@ -118,6 +118,11 @@ body {
   padding: 15px 35px;
 }
 
+#hero 
+{
+  color: white;
+}
+
 .cnt223 p {
   clear: both;
   color: #fff;
@@ -1199,6 +1204,6 @@ section {
   width: 80%;
 }
 
-.jumbotron button:hover {
+.jumbotron button:hover #hero {
   color: #111;
 }
