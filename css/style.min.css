@@ -279,6 +279,7 @@ section {
 .navbar-toggler {
   font-size: 2rem;
   color: #fff;
+  transition: ease-in-out;
 }
 
 .jumbotron {

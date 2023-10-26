@@ -1322,6 +1322,16 @@
         <script src="js/app.min.js "></script>
         <script src="//localhost:35729/livereload.js"></script>
 
+
+        <script>
+            document.querySelectorAll(".nav-link").forEach((e)=>{
+                e.addEventListener('click',()=>{
+                    // navbar-nav-header
+                    document.getElementById("navbar-nav-header").classList.remove("show")
+                })
+            })
+        </script>
+
         <!-- script for popup -->
         <script>
             const button = document.querySelector("popup"),
