@@ -459,8 +459,9 @@ section {
   width: 2000px;
   height: 400px;
   background: #8E2DE2;
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: -webkit-linear-gradient(to right, rgb(74, 0, 224,0.3), rgb(142, 45, 226,0.3));
+  background: linear-gradient(to right, rgb(74, 0, 224,0.3), rgb(142, 45, 226,0.3));
+  opacity: 0.2;
   transform-origin: 50% 150% 0;
   position: absolute;
   left: 0;
@@ -472,8 +473,8 @@ section {
   width: 2000px;
   height: 400px;
   background: #8E2DE2;
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: -webkit-linear-gradient(to right, rgb(74, 0, 224,0.3), rgb(142, 45, 226,0.3));
+  background: linear-gradient(to right, rgb(74, 0, 224,0.3), rgb(142, 45, 226,0.3));
   transform-origin: 65% 100% 0;
   position: absolute;
   right: 0;
@@ -1139,7 +1140,7 @@ section {
     /* background: linear-gradient(to right, #333399, #ff00cc); */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* padding: 10px; */
-  /* } */
+  /* }   */
 }
 
 @media (max-width: 767px) {
