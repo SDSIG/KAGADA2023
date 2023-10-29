@@ -161,23 +161,24 @@
 
     <!-- navbar script -->
     <script>
-        if(window.scrollY >= 0 && window.scrollY < 65){
-            document.querySelector(".navbar-toggler").addEventListener("click",()=>{
-                if(document.getElementById('header-navbar').classList.contains("nav-beautiful")){
+
+        document.querySelector(".navbar-toggler").addEventListener("click", () => {
+            if (window.scrollY >= 0 && window.scrollY < 65) {
+                if (document.getElementById('header-navbar').classList.contains("nav-beautiful")) {
                     document.getElementById('header-navbar').classList.remove('nav-beautiful');
                 }
-                else{
-                    if(window.scrollY >= 0 && window.scrollY < 65){
-                        document.getElementById('header-navbar').classList.add('nav-beautiful');
-                    }
+                else {
+                    document.getElementById('header-navbar').classList.add('nav-beautiful');
                 }
-            })
-            document.querySelectorAll(".nav-link").forEach((ele)=>{
-                ele.addEventListener("click",()=>{
+            }
+        })
+        document.querySelectorAll(".nav-link").forEach((ele) => {
+            if (window.scrollY >= 0 && window.scrollY < 65) {
+                ele.addEventListener("click", () => {
                     document.getElementById('header-navbar').classList.remove('nav-beautiful');
                 })
-            })
-        }
+            }
+        })
         document.addEventListener('scroll', (ele) => {
             if (window.scrollY >= 65) {
                 document.getElementById('header-navbar').classList.add('nav-beautiful');
@@ -233,18 +234,22 @@
 
     </div>
     <section id="home" class="home">
-        <div class="jumbotron d-flex align-items-center" style="background-image: url(./img/UVCE_Home.jpg); background-position: center; background-size: cover;">
+        <div class="jumbotron d-flex align-items-center"
+            style="background-image: url(./img/UVCE_Home.jpg); background-position: center; background-size: cover;">
             <div class="container text-center">
                 <br>
                 <h5 class="mb-4 box-border ">IEEE UVCE Presents </h5>
                 <h2 class="display-1 mb-4 samarkan">KAGADA<br>2023</h2>
-                <button><a id="hero" href="https://bit.ly/KAGADA23_Paper_Presentation" target="_blank"> Paper Presentation </a></button>
+                <button><a id="hero" href="https://bit.ly/KAGADA23_Paper_Presentation" target="_blank"> Paper
+                        Presentation </a></button>
                 <br>
                 <br>
-                <button><a id="hero" href="https://bit.ly/KAGADA23_Poster_Presentation" target="_blank"> Poster Presentation </a></button>
+                <button><a id="hero" href="https://bit.ly/KAGADA23_Poster_Presentation" target="_blank"> Poster
+                        Presentation </a></button>
                 <br>
                 <br>
-                <button><a id="hero" href="https://bit.ly/KAGADA23_Project_Presentation" target="_blank"> Project Presentation </a></button>
+                <button><a id="hero" href="https://bit.ly/KAGADA23_Project_Presentation" target="_blank"> Project
+                        Presentation </a></button>
             </div>
             <div class="rectangle-1"></div>
             <div class="rectangle-2"></div>
@@ -463,7 +468,9 @@
                                         engaging
                                         the community not only with technical skills but also in humanitarian and
                                         societal
-                                        causes. Our diligent efforts haven’t been left unrecognized. In September 2023, IEEE UVCE received a token of appreciation as 2023 IEEE R10 Special Recognition of Student Branch Award by IEEE R10 Awards and Recognitions Committee.
+                                        causes. Our diligent efforts haven’t been left unrecognized. In September 2023,
+                                        IEEE UVCE received a token of appreciation as 2023 IEEE R10 Special Recognition
+                                        of Student Branch Award by IEEE R10 Awards and Recognitions Committee.
                                     </p>
                                     <!-- <div class="progress mb-3"> -->
                                     <!-- <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML5 95%</div> -->
@@ -546,113 +553,124 @@
             <section id="features" class="bg-white">
                 <br><br><br>
                 <div class="exp">
-                <div class="title-wrap mb-5" data-aos="fade-up">
-                    <h2 class="section-title">
-                        EXPLORE KAGADA <!-- <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a> -->
-                    </h2>
-                    <p class="section-sub-title">check out each track and participate in the one for you
-                    </p>
+                    <div class="title-wrap mb-5" data-aos="fade-up">
+                        <h2 class="section-title">
+                            EXPLORE KAGADA
+                            <!-- <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a> -->
+                        </h2>
+                        <p class="section-sub-title">check out each track and participate in the one for you
+                        </p>
+                    </div>
+
+                    <div class="center" id="exp">
+                        <div class="property-card">
+                            <a href="#">
+                                <div class="property-image">
+                                </div>
+                            </a>
+                            <div class="property-description">
+                                <h5> Paper Presentation </h5><br>
+                                <p>Paper presentation competition gives participants' a chance to present their
+                                    technical research papers on their interested domain and lay an initial stone to
+                                    engrave one's knowledge to serve society, including categories: UG/PG.</p>
+                            </div>
+                            <a href="#">
+                                <div class="property-social-icons">
+                                    <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="property-card">
+                            <a href="#">
+                                <div class="property-image">
+                                </div>
+                            </a>
+                            <div class="property-description">
+                                <h5> Poster Presentation </h5><br>
+                                <p>Poster presentation provides an opportunity to present innovative ideas through
+                                    technical posters to depict how real-life problems can be solved. Participants are
+                                    free to choose the domain for their posters.</p>
+                            </div>
+                            <a href="#">
+                                <div class="property-social-icons">
+                                    <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="property-card">
+                            <a href="#">
+                                <div class="property-image">
+                                </div>
+                            </a>
+                            <div class="property-description">
+                                <h5> Project Presentation </h5><br>
+                                <p>Project presentation makes way for students to bring out the inventors in them and
+                                    their creativity into pure reality through working model demonstrations. This also
+                                    helps them to display their innovative thoughts on different domains.</p>
+                            </div>
+                            <a href="#">
+                                <div class="property-social-icons">
+                                    <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
                 </div>
-
-                <div class="center" id="exp">
-                    <div class="property-card">
-                        <a href="#">
-                            <div class="property-image">
-                            </div>
-                        </a>
-                        <div class="property-description">
-                            <h5> Paper Presentation </h5><br>
-                            <p>Paper presentation competition gives participants' a chance to present their technical research papers on their interested domain and lay an initial stone to engrave one's knowledge to serve society, including categories: UG/PG.</p>
-                        </div>
-                        <a href="#">
-                            <div class="property-social-icons">
-                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="property-card">
-                        <a href="#">
-                            <div class="property-image">
-                            </div>
-                        </a>
-                        <div class="property-description">
-                            <h5> Poster Presentation </h5><br>
-                            <p>Poster presentation provides an opportunity to present innovative ideas through technical posters to depict how real-life problems can be solved. Participants are free to choose the domain for their posters.</p>
-                        </div>
-                        <a href="#">
-                            <div class="property-social-icons">
-                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="property-card">
-                        <a href="#">
-                            <div class="property-image">
-                            </div>
-                        </a>
-                        <div class="property-description">
-                            <h5> Project Presentation </h5><br>
-                            <p>Project presentation makes way for students to bring out the inventors in them and their creativity into pure reality through working model demonstrations. This also helps them to display their innovative thoughts on different domains.</p>
-                        </div>
-                        <a href="#">
-                            <div class="property-social-icons">
-                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                            </div>
-                        </a>
-                    </div>
-
-
-                </div>
-            </div>
                 <br>
                 <div class="other">
-                <div class="title-wrap mb-5" data-aos="fade-up">
-                    <h2 class="section-title">
-                        Other initiatives <!-- <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a> -->
-                    </h2>
-                    <p class="section-sub-title">check out each track and participate in the one for you
-                    </p>
-                </div>
-
-                <div class="center" id="other">
-
-                    <div class="property-card">
-                        <a href="#">
-                            <div class="property-image">
-                            </div>
-                        </a>
-                        <div class="property-description">
-                            <h5> Ottige Kaliyona </h5><br>
-                            <p>Ottige Kaliyona conducted by IEEE UVCE WIE during KAGADA 2023 as an initiative to contribute in uprising of the society, inviting students from a government school for technical education and fun activities.</p>
-                        </div>
-                        <a href="#">
-                            <div class="property-social-icons">
-                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                            </div>
-                        </a>
+                    <div class="title-wrap mb-5" data-aos="fade-up">
+                        <h2 class="section-title">
+                            Other initiatives
+                            <!-- <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a> -->
+                        </h2>
+                        <p class="section-sub-title">check out each track and participate in the one for you
+                        </p>
                     </div>
 
-                    <div class="property-card">
-                        <a href="#">
-                            <div class="property-image">
+                    <div class="center" id="other">
+
+                        <div class="property-card">
+                            <a href="#">
+                                <div class="property-image">
+                                </div>
+                            </a>
+                            <div class="property-description">
+                                <h5> Ottige Kaliyona </h5><br>
+                                <p>Ottige Kaliyona conducted by IEEE UVCE WIE during KAGADA 2023 as an initiative to
+                                    contribute in uprising of the society, inviting students from a government school
+                                    for technical education and fun activities.</p>
                             </div>
-                        </a>
-                        <div class="property-description">
-                            <h5> Food for Cause </h5><br>
-                            <p>The event is conducted by ECE students of UVCE where food stalls serve delicious foods and the profits collected from the same will be donated to an NGO.</p>
+                            <a href="#">
+                                <div class="property-social-icons">
+                                    <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                </div>
+                            </a>
                         </div>
-                        <a href="#">
-                            <div class="property-social-icons">
-                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+
+                        <div class="property-card">
+                            <a href="#">
+                                <div class="property-image">
+                                </div>
+                            </a>
+                            <div class="property-description">
+                                <h5> Food for Cause </h5><br>
+                                <p>The event is conducted by ECE students of UVCE where food stalls serve delicious
+                                    foods and the profits collected from the same will be donated to an NGO.</p>
                             </div>
-                        </a>
+                            <a href="#">
+                                <div class="property-social-icons">
+                                    <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                </div>
+                            </a>
+                        </div>
+
+
                     </div>
-
-
                 </div>
-            </div>
 
                 <!-- <div class="container"> -->
                 <!-- <div class="section-content"> -->
@@ -979,7 +997,8 @@
         <!-- FAQ Section-->
 
         <section class="sponsors" id="faqs">
-            <section id="client" class="overlay bg-fixed" style="background-image: url(./img/uvce_vector.png); background-position: center;">
+            <section id="client" class="overlay bg-fixed"
+                style="background-image: url(./img/uvce_vector.png); background-position: center;">
                 <div class="container">
                     <br><br>
                     <div class="section-content" data-aos="fade-up">
@@ -997,17 +1016,19 @@
                                     <li>
                                         <input type="checkbox" checked>
                                         <i></i>
-                                        <h2> WHAT IS KAGADA AND WHEN IS IT? 
-                                            
+                                        <h2> WHAT IS KAGADA AND WHEN IS IT?
+
                                         </h2>
-                                        <p>KAGADA is an Annual National Level Technical Student Conference conducted by IEEE UVCE. It will be held on 18th November, 2023.
+                                        <p>KAGADA is an Annual National Level Technical Student Conference conducted by
+                                            IEEE UVCE. It will be held on 18th November, 2023.
                                         </p>
                                     </li>
                                     <li>
                                         <input type="checkbox" checked>
                                         <i></i>
                                         <h2>WHAT CAN I PRESENT IN KAGADA?</h2>
-                                        <p>KAGADA has 3 tracks in it viz,. Paper Presentation, Poster Presentation and Project Presentation. You can choose any of these tracks. 
+                                        <p>KAGADA has 3 tracks in it viz,. Paper Presentation, Poster Presentation and
+                                            Project Presentation. You can choose any of these tracks.
                                         </p>
                                     </li>
                                     <li>
@@ -1015,7 +1036,9 @@
                                         <i></i>
                                         <h2>WHY SHOULD I PARTICIPATE IN KAGADA 2023?
                                         </h2>
-                                        <p>As KAGADA is a national level technical student conference, one gets a national level platform to exhibit their innovative ideas and thoughts. This also provides an opportunity to showcase their presentation skills. 
+                                        <p>As KAGADA is a national level technical student conference, one gets a
+                                            national level platform to exhibit their innovative ideas and thoughts. This
+                                            also provides an opportunity to showcase their presentation skills.
                                         </p>
                                     </li>
                                     <li>
@@ -1023,7 +1046,8 @@
                                         <i></i>
                                         <h2>WHAT IS THE DOMAIN FOR PRESENTAION?
                                         </h2>
-                                        <p>There is no specific domain for presentation but the sole purpose is to come up with ideas for the betterment of society. 
+                                        <p>There is no specific domain for presentation but the sole purpose is to come
+                                            up with ideas for the betterment of society.
                                         </p>
                                     </li>
                                     <li>
@@ -1357,8 +1381,8 @@
 
 
         <script>
-            document.querySelectorAll(".nav-link").forEach((e)=>{
-                e.addEventListener('click',()=>{
+            document.querySelectorAll(".nav-link").forEach((e) => {
+                e.addEventListener('click', () => {
                     // navbar-nav-header
                     document.getElementById("navbar-nav-header").classList.remove("show")
                 })
@@ -1384,14 +1408,14 @@
                 progress.classList.remove("active");
                 toast.classList.add("toast-none")
             }, 5300);
-            
+
             closeIcon.addEventListener("click", () => {
                 toast.classList.remove("active");
 
                 setTimeout(() => {
                     progress.classList.remove("active");
                 }, 300);
-                
+
                 toast.classList.add("toast-none")
                 clearTimeout(timer1);
                 clearTimeout(timer2);
