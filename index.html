@@ -161,6 +161,29 @@
 
     <!-- navbar script -->
     <script>
+        if(window.scrollY >= 0 && window.scrollY < 65){
+            document.querySelector(".navbar-toggler").addEventListener("click",()=>{
+                document.getElementById('header-navbar').classList.add('nav-beautiful');
+            })
+            document.querySelectorAll(".nav-link").forEach((ele)=>{
+                ele.addEventListener("click",()=>{
+                    document.getElementById('header-navbar').classList.remove('nav-beautiful');
+                })
+            })
+            if(document.getElementById('header-navbar').classList.contains("nav-beautiful")){
+                document.querySelector(".navbar-toggler").addEventListener("click",()=>{
+                    document.getElementById('header-navbar').classList.remove('nav-beautiful');
+                })
+            }
+        }
+        if(window.scrollY >= 0 && window.scrollY < 65){
+            alert("working")
+            if(document.getElementById('header-navbar').classList.contains("nav-beautiful")){
+                // document.querySelector(".navbar-toggler").addEventListener("click",()=>{
+                //     document.getElementById('header-navbar').classList.remove('nav-beautiful');
+                // })
+            }
+        }
         document.addEventListener('scroll', (ele) => {
             if (window.scrollY >= 65) {
                 document.getElementById('header-navbar').classList.add('nav-beautiful');
