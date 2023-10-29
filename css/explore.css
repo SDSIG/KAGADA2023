@@ -98,6 +98,14 @@ p
   text-align:center;
 }
 
+.property-description p
+{
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
 /* Social Icons */
 
 .property-social-icons
