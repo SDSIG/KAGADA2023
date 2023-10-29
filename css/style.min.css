@@ -117,7 +117,7 @@ body {
   backdrop-filter: blur(7px) saturate(180%);
   -webkit-backdrop-filter: blur(7px) saturate(180%);
   background-color: rgba(126, 126, 128, 0.15);
-  box-shadow: 0 0 50px 15px #90fca4;
+  box-shadow: 0 0 50px 15px #333399;
   position: relative;
   bottom: 10;
   z-index: 103;
@@ -204,7 +204,7 @@ h6,
 }
 
 a {
-  color: #90fca4;
+  color: #333399;
   transition: all .3s ease-in-out;
 }
 
@@ -343,7 +343,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #90fca4;
+  background: #333399;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, rgb(9, 32, 63) 0%, rgb(83, 120, 149) 100%);
   /* Chrome 10-25, Safari 5.1-6 */
@@ -387,7 +387,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #90fca4;
+  background: #333399;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, rgb(9, 32, 63) 0%, rgb(83, 120, 149) 100%);
   /*#90fca4 #ff00cc*/
@@ -449,7 +449,7 @@ section {
 }
 
 .btn-shadow {
-  box-shadow: -5px 8px 20px 0px rgba(229, 16, 2, 0.15);
+  box-shadow: -5px 8px 20px 0px #333399;
 }
 
 .btn-icon {
@@ -718,7 +718,7 @@ section {
 }
 
 .progress-bar {
-  background-color: #90fca4;
+  background-color: #333399;
 }
 
 /*=====  End of FEATURES  ======*/
@@ -743,7 +743,7 @@ section {
 }
 
 .testi-icon {
-  color: #90fca4;
+  color: #4070f4;
 }
 
 .testi-content {
@@ -772,7 +772,7 @@ section {
   height: 100%;
   outline: none;
   border-radius: 50%;
-  background-color: rgba(255, 0, 204, 0.3);
+  background-color: #333399;
   text-indent: -999em;
   cursor: pointer;
   position: absolute;
@@ -783,7 +783,7 @@ section {
 
 .owl-dot.active>span {
   background-color: transparent;
-  box-shadow: 0 0 0 2px #90fca4;
+  box-shadow: 0 0 0 2px #4070f4;
 }
 
 .owl-dots {
@@ -1080,8 +1080,8 @@ section {
 =            FORM CONTROL            =
 ====================================*/
 .form-control:focus {
-  border-color: #90fca4;
-  box-shadow: 0 0 0 0.2rem rgba(253, 101, 90, 0.25);
+  border-color: #4070f4;
+  box-shadow: 0 0 0 0.2rem #333399;
 }
 
 .form-control::-webkit-input-placeholder {
