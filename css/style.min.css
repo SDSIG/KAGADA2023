@@ -1220,4 +1220,26 @@ section {
 
 .jumbotron button:hover #hero {
   color: #111;
+
+}
+.triangle-1 img
+{
+  margin-bottom: 5em;
+}
+.circle-1
+{
+  /* display: none; */
+  margin-top: -6em;
+}
+.triangle-3
+{
+  margin-top: 3em;
+}
+.circle-3
+{
+  margin-top: 1.4em;
+}
+.triangle-4
+{
+  display: none;
 }
