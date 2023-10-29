@@ -1126,7 +1126,6 @@ section {
     top: 0;
     height: auto;
     width: 100%;
-    background: #90fca400;
     /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #333399, #90fca4); */
     /* Chrome 10-25, Safari 5.1-6 */
@@ -1155,7 +1154,6 @@ section {
   #header-navbar {
     padding-top: 15px !important;
     padding-bottom: 15px !important;
-    background: #90fca400;
     /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #333399, #90fca4); */
     /* Chrome 10-25, Safari 5.1-6 */
