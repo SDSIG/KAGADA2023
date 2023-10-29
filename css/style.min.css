@@ -216,7 +216,7 @@ button:focus {
 .btn:hover,
 a:hover {
   text-decoration: none;
-  color: #333399;
+  color: #357cc4;
 }
 
 img {
@@ -430,8 +430,8 @@ section {
 }
 
 .btn-primary:hover {
-  background-color: #333399;
-  border-color: #333399;
+  background-color: #357cc4;
+  border-color: #357cc4;
   color: #fff;
 }
 
@@ -443,8 +443,8 @@ section {
 }
 
 .btn-outline-primary:hover {
-  background-color: #333399;
-  border-color: #333399;
+  background-color: #357cc4;
+  border-color: #357cc4;
   color: #fff;
 }
 
