@@ -167,7 +167,9 @@
                     document.getElementById('header-navbar').classList.remove('nav-beautiful');
                 }
                 else{
-                    document.getElementById('header-navbar').classList.add('nav-beautiful');
+                    if(window.scrollY >= 0 && window.scrollY < 65){
+                        document.getElementById('header-navbar').classList.add('nav-beautiful');
+                    }
                 }
             })
             document.querySelectorAll(".nav-link").forEach((ele)=>{
