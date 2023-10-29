@@ -43,6 +43,12 @@
 
 /* Styles for the content section */
 
+#uvce, #ieee, #kagada p
+{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .content {
   width: 77%;
   margin: 50px auto;
@@ -1242,4 +1248,34 @@ section {
 .triangle-4
 {
   display: none;
+}
+@media (max-width: 575px)
+{
+  #kagada
+  {
+    margin: 35px;
+  } 
+  #ieee
+  {
+    margin: 30px;
+  }
+  #ieee h2
+  {
+    text-align: center;
+  }
+  #uvce
+  {
+    margin: 30px;
+  }
+  #uvce h2
+  {
+    text-align: center;
+  }
+  #ieeelogo
+  {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
 }
