@@ -66,6 +66,10 @@
 .mb-4 h2{
 
   text-align: center;
+  margin-bottom: 40px;
+  /* margin-left: 51%; */
+
+
 }
 @media (min-width: 500px) {
   .content {
@@ -1300,4 +1304,9 @@ section {
   margin-right: auto;
   width: 50%;
   }
+
+  /* .mb-4 h2{
+   margin-left: 0pxS;
+    text-align: center;
+  } */
 }
