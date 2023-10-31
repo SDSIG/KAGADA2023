@@ -8,6 +8,13 @@
   src: url('../font/GlacialIndifference-Regular.otf');
 }
 
+/* @font-face {
+  font-family: 'veritas';
+  src: url('../font/veritas-sans-font/VeritasSans-VG19V.otf');
+} */
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 
 #button {
   display: inline-block;
