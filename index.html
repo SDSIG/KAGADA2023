@@ -75,7 +75,7 @@
         <div class="progress"></div>
     </div> -->
     <!-- countdown script -->
-    <script>
+    <!-- <script>
         var countDownDate = new Date("Nov 15, 2023 00:00:00").getTime();
 
         var x = setInterval(function () {
@@ -96,14 +96,14 @@
                 document.getElementById("countdown").innerHTML = "ENDED";
             }
         }, 1000);
-    </script>
+    </script> -->
 
 
     <!-- Back to top button -->
     <a id="button"></a>
 
     <!-- Navbar html start -->
-    <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+    <nav data-aos="fade-up" id="header-navbar" class="navbar navbar-expand-lg py-4">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center text-white" href="/">
 
@@ -111,8 +111,17 @@
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header"
                 aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="lnr lnr-menu"></span>
+                <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80"
+                    onclick="this.classList.toggle('active')">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom"
+                        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg>
             </button>
+
+
             <div class="collapse navbar-collapse" id="navbar-nav-header">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -158,10 +167,17 @@
         </div>
     </nav>
     <!-- navbar html end -->
-
+    <!-- hamburger animation -->
+    <script>
+        document.querySelectorAll('.nav-link').forEach((e)=>{
+            e.addEventListener("click",()=>{
+                document.querySelector('.ham').classList.remove('active');
+            })
+        })
+    </script>
     <!-- navbar script -->
     <script>
-
+        
         document.querySelector(".navbar-toggler").addEventListener("click", () => {
             if (window.scrollY >= 0 && window.scrollY < 65) {
                 if (document.getElementById('header-navbar').classList.contains("nav-beautiful")) {
@@ -238,11 +254,12 @@
             style="background-image: url(./img/UVCE_Home.jpg); background-position: center; background-size: cover;">
             <div class="container text-center">
                 <br>
-                <div class="herologo">
+                <div data-aos="zoom-in" class="herologo">
                     <img src="./img/first-half.png" style="width: 90%; height: auto;" alt="heading">
                     <img src="./img/sec-half.png" style="width: 50%; height: auto;" alt="heading">
                 </div>
-                <img src="./img/kadadad-01.png" id="hero-logo-desktop" style="width: 90%;" alt="heading">
+                <img src="./img/kadadad-01.png" data-aos="zoom-in" id="hero-logo-desktop" style="width: 90%;"
+                    alt="heading">
                 <!-- <button><a id="hero" href="https://bit.ly/KAGADA23_Paper_Presentation" target="_blank"> Paper
                         Presentation </a></button>
                 <br>
@@ -396,20 +413,21 @@
                 <div class="section-content">
                     <div class="row">
                         <div class="col-md-12">
-                            
-            
+
+
                             <div class="mb-4">
                                 <h2 style="font-family: 'Montserrat', sans-serif">UVCE</h2>
                             </div>
 
-                            <div class="align-items-center text-white" style="display:flex;justify-content: space-evenly;flex-wrap: wrap;">
-                                
+                            <div class="align-items-center text-white"
+                                style="display:flex;justify-content: space-evenly;flex-wrap: wrap;">
+
                                 <div class="col-md-4 col-sm-6" data-aos="flip-right">
                                     <img class="my-5" src="img/uvce_vector.png" alt="">
                                 </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
 
                                 <div id="uvce" class="col-md-4 col-sm-6" data-aos="fade-right">
-                                    
+
                                     <p style="font-family: 'glacial'; font-size: 1rem;">Established in the year 1917 by
                                         Bharat Ratna Sir M Visvesvaraya, University of
                                         Visvesvaraya College of Engineering (UVCE) is an AICTE approved establishment
@@ -433,7 +451,7 @@
                                     <!-- <button type="button" class="btn btn-outline-primary">FEATURES</button> -->
                                 </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
 
-                               
+
 
                             </div><!--/ .featurettes-item -->
 
@@ -458,13 +476,13 @@
                                 <h2 style="font-family: 'Montserrat', sans-serif">IEEE UVCE</h2>
                             </div>
                             <div class="row align-items-center">
-                               
+
                                 <div class="col-md-4 offset-md-2 col-sm-6" data-aos="flip-left">
                                     <img id="ieeelogo" class="my-5" src="img/ieee-img-transformed.webp" alt="">
                                 </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
 
                                 <div id="ieee" class="col-md-4 offset-md-right-2 col-sm-6" data-aos="fade-left">
-                                    
+
                                     <p style="font-family: 'glacial'; font-size: 1rem;">IEEE UVCE has come to be one of
                                         the most recognised Student Branch across the
                                         Region
@@ -495,7 +513,7 @@
                                     <!-- </div> -->
                                 </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
 
-                               
+
 
                             </div><!--/ .featurettes-item -->
 
@@ -589,10 +607,14 @@
                             </a>
                             <div class="property-description">
                                 <h5> Paper Presentation </h5><br>
-                                <p style="margin-bottom: 8px;">Paper presentation competition gives participants' a chance to present their
+                                <p style="margin-bottom: 8px;">Paper presentation competition gives participants' a
+                                    chance to present their
                                     technical research papers on their interested domain and lay an initial stone to
-                                    engrave one's knowledge to serve society with their innovative ideas, including categories: UG/PG.</p>
-                                    <p style="text-align: center; font-size: 15px; font-family:'glacial'; font-style: italic;">Registration fee: <span>&#8377</span>200 per team.</p>
+                                    engrave one's knowledge to serve society with their innovative ideas, including
+                                    categories: UG/PG.</p>
+                                <p
+                                    style="text-align: center; font-size: 15px; font-family:'glacial'; font-style: italic;">
+                                    Registration fee: <span>&#8377</span>200 per team.</p>
                             </div>
                             <a href="#">
                                 <div class="property-social-icons">
@@ -609,10 +631,12 @@
                             </a>
                             <div class="property-description">
                                 <h5> Poster Presentation </h5><br>
-                                <p >Poster presentation provides an opportunity to present innovative ideas through
+                                <p>Poster presentation provides an opportunity to present innovative ideas through
                                     technical posters to depict how real-life problems can be solved. Participants are
                                     free to choose the domain of their choice.</p>
-                                    <p style="text-align: center; font-size: 15px; font-family:'glacial'; font-style: italic; margin-top: 26px;">Registration fee: <span>&#8377</span>120 per team.</p>
+                                <p
+                                    style="text-align: center; font-size: 15px; font-family:'glacial'; font-style: italic; margin-top: 26px;">
+                                    Registration fee: <span>&#8377</span>120 per team.</p>
                             </div>
                             <a href="#">
                                 <div class="property-social-icons">
@@ -629,11 +653,14 @@
                             </a>
                             <div class="property-description">
                                 <h5> Project Presentation </h5><br>
-                                <p style="margin-bottom: 8px;">Project presentation makes way for students to bring out the inventors in them and
+                                <p style="margin-bottom: 8px;">Project presentation makes way for students to bring out
+                                    the inventors in them and
                                     their creativity into pure reality through working model demonstrations. This also
                                     helps them to display their innovative thoughts on different domains.</p>
-                        
-                                    <p style="text-align: center; font-size: 15px; font-family:'glacial'; font-style: italic; ">Registration fee: <span>&#8377</span>160 per team.</p>
+
+                                <p
+                                    style="text-align: center; font-size: 15px; font-family:'glacial'; font-style: italic; ">
+                                    Registration fee: <span>&#8377</span>160 per team.</p>
                             </div>
                             <a href="#">
                                 <div class="property-social-icons">
