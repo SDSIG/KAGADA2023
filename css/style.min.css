@@ -3,6 +3,11 @@
   src: url('../font/SAMAN___.TTF');
 }
 
+@font-face {
+  font-family: 'glacial';
+  src: url('../font/GlacialIndifference-Regular.otf');
+}
+
 
 #button {
   display: inline-block;
@@ -63,6 +68,13 @@
   }
   #button {
     margin: 30px;
+  }
+  .herologo{
+    display: none;
+  }
+  #hero-logo-desktop{
+    display: block;
+    margin: auto;
   }
 }
 .content h1 {
@@ -277,6 +289,8 @@ section {
 .navbar-nav .nav-link {
   color: #fff;
   transition: .3s ease;
+  font-size: 1.15rem;
+  padding-top: 0.5em;
 }
 
 .navbar-nav:hover li a {
@@ -1173,6 +1187,11 @@ section {
     height: 30px;
     font-size: 16px;
   }
+  .herologo{
+    display: block;
+  }
+  #hero-logo-desktop{
+    display: none;
 }
 
 
