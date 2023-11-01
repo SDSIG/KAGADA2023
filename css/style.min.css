@@ -89,6 +89,7 @@
     width: 43%;
   }
 
+
   #button {
     margin: 30px;
   }
@@ -1382,6 +1383,10 @@ section {
       margin-left: auto;
       margin-right: auto;
       width: 50%;
+    }
+
+    .circle-1 {
+      display: none;
     }
 
     /* .mb-4 h2{
