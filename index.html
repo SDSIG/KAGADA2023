@@ -261,9 +261,57 @@
                 </div>
                 <img src="./img/kadadad-01.png" data-aos="zoom-in" id="hero-logo-desktop" style="width: 90%;"
                     alt="heading">
-                <!-- <button><a id="hero" href="https://bit.ly/KAGADA23_Paper_Presentation" target="_blank"> Paper
+                <style>
+                    /* button style */
+
+                    .jumbotron button {
+                        padding: 0.8em 1.8em;
+                        border: 2px solid #fff;
+                        position: relative;
+                        overflow: hidden;
+                        background-color: transparent;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        transition: .3s;
+                        z-index: 1;
+                        font-family: inherit;
+                        color: #fff;
+                        width: 40%;
+                    }
+
+                    @media (max-width: 767px) {
+                        .jumbotron button {
+                            width: 100%;
+                        }
+                    }
+
+                    .jumbotron button::before {
+                        content: '';
+                        width: 0;
+                        height: 300%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) rotate(45deg);
+                        background: #fff;
+                        transition: .7s ease;
+                        display: block;
+                        z-index: -1;
+                    }
+
+                    .jumbotron button:hover::before {
+                        width: 80%;
+                    }
+
+                    .jumbotron button:hover #hero {
+                        color: #111;
+
+                    }
+                </style>
+                <button><a id="hero" href="https://bit.ly/KAGADA23_Paper_Presentation" target="_blank"> Paper
                         Presentation </a></button>
-                <br>
+                <!-- <br>
                 <br>
                 <button><a id="hero" href="https://bit.ly/KAGADA23_Poster_Presentation" target="_blank"> Poster
                         Presentation </a></button>
