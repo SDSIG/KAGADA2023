@@ -1347,7 +1347,7 @@ section {
    margin-left: 0pxS;
     text-align: center;
   } */
-}
+  }
 
 
 
@@ -1373,6 +1373,19 @@ section {
   @media (max-width: 767px) {
     .jumbotron button {
       width: 100%;
+    }
+
+    #explore {
+      margin-bottom: 150px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    #explore {
+      margin-bottom: 400px;
+    }
+    .property-description {
+      width: 21em;
     }
   }
 
