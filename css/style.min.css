@@ -1378,7 +1378,11 @@ section {
     #explore {
       margin-bottom: 150px;
     }
+    .our-names{
+      width: 100%;
+    }
   }
+
 
   @media (max-width: 400px) {
     #explore {
