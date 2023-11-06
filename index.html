@@ -61,7 +61,7 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 
     <!-- popup html -->
-    <!-- <div class="toast">
+    <div class="toast">
         <div class="toast-content">
             <i class="fa-solid fa-circle-info" style="font-size: 30px; color: #4070f4;"></i>
 
@@ -71,13 +71,13 @@
 
             </div>
         </div>
-        <i class="fa-solid fa-xmark close"></i>
+        <i class="fa-solid fa-xmark close" style="color: #fff;"></i>
 
         <div class="progress"></div>
-    </div> -->
+    </div>
     <!-- countdown script -->
-    <!-- <script>
-        var countDownDate = new Date("Nov 15, 2023 00:00:00").getTime();
+    <script>
+        var countDownDate = new Date("Nov 11, 2023 23:59:59").getTime();
 
         var x = setInterval(function () {
             var now = new Date().getTime();
@@ -94,10 +94,11 @@
 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "ENDED";
+                document.querySelector(".text-1").innerHTML = "";
+                document.getElementById("countdown").innerHTML = "REGISTRATION HAS<br>ENDED";
             }
         }, 1000);
-    </script> -->
+    </script>
 
 
     <!-- Back to top button -->
