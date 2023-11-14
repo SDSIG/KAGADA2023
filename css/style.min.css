@@ -1343,6 +1343,7 @@ section {
       display: none;
     }
 
+
     /* .mb-4 h2{
    margin-left: 0pxS;
     text-align: center;
@@ -1378,18 +1379,27 @@ section {
     #explore {
       margin-bottom: 150px;
     }
-    .our-names{
+
+    .our-names {
       width: 100%;
     }
-  }
 
+    .exp-height {
+      height: fit-content;
+    }
+  }
 
   @media (max-width: 400px) {
     #explore {
       margin-bottom: 400px;
     }
+
     .property-description {
       width: 21em;
+    }
+
+    .exp-height {
+      height: fit-content;
     }
   }
 
@@ -1414,4 +1424,31 @@ section {
   .jumbotron button:hover #hero {
     color: #111;
 
+  }
+
+  .ytp-shorts-title-channel-logo {
+    display: none !important;
+  }
+
+  .ytp-title-link {
+    display: none !important;
+  }
+
+  .ytp-title-channel-logo {
+    display: none !important;
+  }
+
+  .ytp-title-expanded-overlay {
+    display: none !important;
+  }
+
+  .ytp-chrome-top {
+    display: none !important;
+  }
+  
+  .ytp-show-cards-title{
+    display: none !important;
+  }
+  .ytp-title-link .yt-uix-sessionlink{
+    display: none !important;
   }
